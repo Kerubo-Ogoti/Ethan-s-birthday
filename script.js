@@ -1,5 +1,5 @@
 function startExperience() { 
-    let suprise =Prompt("What would you like for a birthday suprise?", "Dingdong"
+    let surprise =Prompt("What would you like for a birthday suprise?", "Dingdong"
     );
     alert("🎉 Welcome to the Birthday Surprise!.Alright I will get you" + surprise);
 
