@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+    overflow-x: hidden;
+    color: white;
+    text-align: center;
+}
+
+/* HERO */
+.hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    background: #ff4081;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 20px;
+}
+
+.message {
+    background: #fff3b0;
+    color: black;
+}
+
+.gallery {
+    background: #ffd6ff;
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+.cake {
+    background: #caffbf;
+    color: black;
+}
+
+.cake-box {
+    font-size: 80px;
+    margin: 20px;
+}
+
+.music {
+    background: #bde0fe;
+    color: black;
+}
+
+/* FINAL MESSAGE */
+.final-message {
+    background: #ffafcc;
+    color: black;
+    display: none;
+}
+
+/* BALLONS */
+.balloons {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.balloon {
+    width: 40px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -100px;
+    animation: float 10s infinite;
+}
+
+.b1 { left: 10%; background: red; }
+.b2 { left: 30%; background: blue; }
+.b3 { left: 50%; background: yellow; }
+.b4 { left: 70%; background: green; }
+.b5 { left: 90%; background: purple; }
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-120vh); }
+}
+
+/* CLOUDS */
+.clouds {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.cloud {
+    width: 80px;
+    height: 40px;
+    background: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 50px;
+    animation: move 20s linear infinite;
+}
+
+.cloud:nth-child(1){ left: 10%; }
+.cloud:nth-child(2){ left: 40%; }
+.cloud:nth-child(3){ left: 70%; }
+
+@keyframes move {
+    0% { transform: translateX(-200px); }
+    100% { transform: translateX(120vw); }
+}
