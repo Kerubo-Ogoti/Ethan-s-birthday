@@ -2,14 +2,6 @@ function startExperience() {
     let surprise = prompt("What would you like for a birthday suprise?", "Dingdong"
     );
     alert("🎉 Welcome to the Birthday Surprise Ethan!.Alright I will get you " + surprise + ".");
-
-    confetti({
-        particleCount: 200,
-        spread: 120,
-        origin: { y: 0.6 }
-    });
-
-    document.querySelector(".message").scrollIntoView({ behavior: "smooth" });
 }
 
 function celebrate() {
